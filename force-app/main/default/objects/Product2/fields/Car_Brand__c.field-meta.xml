@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Car_Brand__c</fullName>
+    <externalId>false</externalId>
+    <label>Car Brand</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ford</fullName>
+                <default>false</default>
+                <label>Ford</label>
+            </value>
+            <value>
+                <fullName>Honda</fullName>
+                <default>false</default>
+                <label>Honda</label>
+            </value>
+            <value>
+                <fullName>Nissan</fullName>
+                <default>false</default>
+                <label>Nissan</label>
+            </value>
+            <value>
+                <fullName>Toyota</fullName>
+                <default>false</default>
+                <label>Toyota</label>
+            </value>
+            <value>
+                <fullName>Jeep</fullName>
+                <default>false</default>
+                <label>Jeep</label>
+            </value>
+            <value>
+                <fullName>Audi</fullName>
+                <default>false</default>
+                <label>Audi</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
