@@ -19,7 +19,6 @@ public with sharing class BC_SimulatorController {
                 unBal = unBal - initMonthPay;
                 payWr.unpaidBalance = unBal;
             }
-            System.debug('unBal::::::'+unBal);
             payWr.monthAutoCap = initMonthPay;
             payWr.monthInterest = initInterest;
             payWr.totalPayment = initTotalVat;
