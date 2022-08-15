@@ -21,7 +21,6 @@ public with sharing class BC_SimulatorController {
             }
             payWr.monthAutoCap = initMonthPay;
             payWr.monthInterest = initInterest;
-            System.debug('initTotalVat::::::'+initTotalVat);
             payWr.totalPayment = initTotalVat;
             smw.add(payWr);
         }
