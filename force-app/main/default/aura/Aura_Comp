@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" Controller="CompOpp" >
+    <aura:attribute Name="Message" type="String" default="Numero de Opportinudades relacionadas: " />
+    <aura:attribute Name="Message1" type="Integer"/>
+    <div class="slds-card componentePadre" >
+        <div class="slds-card__body slds-card__body_inner slds-p-top-_medium">
+            <c:Comp_Hijo_Opp messageFromOpp="{!v.Message}"/>
+            <c:Comp_Hijo_Opp messageFromOpp="{!v.Message1}"/>
+        </div>
+    </div>
+	<aura:attribute name="data" type="object"/>
+    <aura:attribute name="columns" type="list"/>
+    <aura:attribute name="OppIds" type="list"/>
+    <aura:handler event="c:Event_CmpCuentas" action="{!c.handlerEventoOppId}" includeFacets="true"/>
+    <lightning:datatable
+     keyField="id"
+     data="{! v.data }"
+     columns="{! v.columns }"
+     hideCheckboxColumn="true"/>
+
+
+</aura:component>
