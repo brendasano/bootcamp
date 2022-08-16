@@ -9,6 +9,7 @@ public with sharing class BC_newProductController {
         recProd.IsActive = isActive;
         recProd.Car_Brand__c = pw.productFamily;
         recProd.Car_color__c = pw.color;
+        System.debug('Holi 2');
         try {
             insert recProd;
             return recProd;
