@@ -1,3 +1,4 @@
+feat:Componente aura mensaje de padre a componente hijo
 <aura:component implements="flexipage:availableForAllPageTypes" access="global" Controller="CompOpp" >
     <aura:attribute Name="Message" type="String" default="Numero de Opportinudades relacionadas: " />
     <aura:attribute Name="Message1" type="Integer"/>
